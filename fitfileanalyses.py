@@ -386,7 +386,11 @@ bkg.SetSizer(vbox)
 import sys
 if len(sys.argv) >= 1:
     (CodePath, PyFileName)      = os.path.split(sys.argv[0])
-    os.chdir(CodePath)
+    print (CodePath, PyFileName)
+
+    if CodePath != '':
+        os.chdir(CodePath)
+        
     win.SetStatusText(os.getcwd(), number=0)
     AutoFillConfigFile(CodePath)
 if len(sys.argv) >= 2:

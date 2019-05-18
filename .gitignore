@@ -1,0 +1,6 @@
+*~
+*.pyc
+images/tmp
+installer/*.exe
+build/
+dist/
